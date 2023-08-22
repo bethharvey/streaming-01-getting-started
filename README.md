@@ -1,5 +1,11 @@
 # streaming-01-getting-started
 
+* Beth Harvey
+* Streaming Data
+* Module 1
+* August 21, 2023
+
+
 > Get started with Python for streaming analytics
 
 Set yourself up for productivity and collaboration.

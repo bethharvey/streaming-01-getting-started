@@ -158,7 +158,7 @@ def get_header(fn):
  Python Build Date and Compiler: {build_date} with {compiler}
  Python Implementation: {implementation}
  Active pip environment:   {os.environ.get('PIP_DEFAULT_ENV', 'None')}
- Active conda environment: {os.environ.get('PIP_DEFAULT_ENV', 'None')}
+ Active conda environment: {os.environ.get('CONDA_DEFAULT_ENV', 'None')}
  Path to Interpreter:         {sys.executable}
  Path to virtual environment: {sys.prefix}
  Current Working Directory:   {os.getcwd()}

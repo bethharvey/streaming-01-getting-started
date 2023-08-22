@@ -1,0 +1,27 @@
+
+======================================================================
+======================================================================
+ Welcome to the NW Python Debugging Information Utility!
+ Date and Time: 2023-08-21 at 07:48 PM
+ Operating System: posix Darwin 22.5.0
+ System Architecture: 64bit
+ Number of CPUs: 8
+ Machine Type: arm64
+ Python Version: 3.11.2
+ Python Build Date and Compiler: v3.11.2:878ead1ac1 with Feb  7 2023 10:02:41
+ Python Implementation: CPython
+ Active pip environment:   None
+ Active conda environment: base
+ Path to Interpreter:         /Users/macbeth/Documents/Streaming Data/Module 1/streaming-01-getting-started/.venv/bin/python3
+ Path to virtual environment: /Users/macbeth/Documents/Streaming Data/Module 1/streaming-01-getting-started/.venv
+ Current Working Directory:   /Users/macbeth/Documents/Streaming Data/Module 1/streaming-01-getting-started
+ Path to source directory:    /Users/macbeth/Documents/Streaming Data/Module 1/streaming-01-getting-started
+ Path to script file:         /Users/macbeth/Documents/Streaming Data/Module 1/streaming-01-getting-started/util_about.py
+ User's Home Directory:       /Users/macbeth
+ Terminal Environment:        VS Code
+ Terminal Type:               zsh
+ Preferred command:           python3
+ Is python3 available in PATH:   True
+ Is git available in PATH:      True 
+======================================================================
+======================================================================

@@ -34,7 +34,15 @@ OUTPUT_FILE_NAME = "batchfile_3_farenheit.csv"
 
 
 def convert_k_to_f(temp_k):
-    return
+    """Convert to Kelvin to Fahrenheit.
+    Use the built-in round() function to round to 2 decimal places
+    Use the built-in float() function to convert the string to a float (a floating point number)
+    All CSV values are read as strings.
+    """
+    logging.debug(f"Calling convert_k_to_f() with {temp_k}.")
+    fahrenheit = round((float(temp_k) - 273.15) * (9/5) + 32 , 2)
+    logging.debug(f"Converted {temp_k}C to {fahrenheit}K.")
+    return fahrenheit
 
 
 def process_rows(input_file_name, output_file_name):
