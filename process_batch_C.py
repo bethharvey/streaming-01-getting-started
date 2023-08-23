@@ -40,13 +40,42 @@ def convert_k_to_f(temp_k):
     All CSV values are read as strings.
     """
     logging.debug(f"Calling convert_k_to_f() with {temp_k}.")
-    fahrenheit = round((float(temp_k) - 273.15) * (9/5) + 32 , 2)
+    fahrenheit = round((float(temp_k) - 273.15) * (9.0 / 5.0) + 32.0 , 2)
     logging.debug(f"Converted {temp_k}C to {fahrenheit}K.")
     return fahrenheit
 
 
 def process_rows(input_file_name, output_file_name):
-    return
+    logging.info(f'Calling process_rows(): {input_file_name} to {output_file_name}.')
+
+    # Create file object for input
+    with open(input_file_name, 'r') as input_file:
+        logging.info(f'Opened for reading: {input_file_name}.')
+
+        # Create CSV reader object
+        reader = csv.reader(input_file, delimiter = ',')
+
+        header = next(reader)
+        logging.info(f'Skipped header row: {header}')
+
+        # Create file object for output
+        # Set newline parameter to empty string to avoid extra newlines in output
+        with open(output_file_name, 'w', newline = '') as output_file:
+            logging.info(f'Opened for writing: {output_file_name}')
+
+            # Create CSV writer object
+            writer = csv.writer(output_file, delimiter = ',')
+
+            # Write header row to output file
+            writer.writerow(['Year', 'Month', 'Day', 'Time', 'TempF'])
+
+            for row in reader:
+                Year, Month, Day, Time, TempK = row
+
+                TempF = convert_k_to_f(TempK)
+
+                writer.writerow([Year, Month, Day, Time, TempF])
+    
 
 
 # ---------------------------------------------------------------------------
